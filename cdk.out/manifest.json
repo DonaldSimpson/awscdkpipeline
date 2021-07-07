@@ -1,0 +1,1218 @@
+{
+  "version": "7.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "LambdaStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "LambdaStack.template.json"
+      },
+      "metadata": {
+        "/LambdaStack/Lambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaServiceRoleA8ED4D3B",
+            "trace": [
+              "new Role (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "new Function (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-lambda/lib/function.ts:307:31)",
+              "new LambdaStack (/Users/donaldsimpson/workspaces/pipeline/lib/lambda-stack.ts:13:18)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:11:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/Lambda/LambdaSourceBucketNameParameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaLambdaSourceBucketNameParameter159473FC",
+            "trace": [
+              "CfnParametersCode.bind (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-lambda/lib/code.ts:242:31)",
+              "new Function (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-lambda/lib/function.ts:327:29)",
+              "new LambdaStack (/Users/donaldsimpson/workspaces/pipeline/lib/lambda-stack.ts:13:18)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:11:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/Lambda/LambdaSourceObjectKeyParameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaLambdaSourceObjectKeyParameter06573F1D",
+            "trace": [
+              "CfnParametersCode.bind (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-lambda/lib/code.ts:248:30)",
+              "new Function (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-lambda/lib/function.ts:327:29)",
+              "new LambdaStack (/Users/donaldsimpson/workspaces/pipeline/lib/lambda-stack.ts:13:18)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:11:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/Lambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaD247545B",
+            "trace": [
+              "new Function (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-lambda/lib/function.ts:369:35)",
+              "new LambdaStack (/Users/donaldsimpson/workspaces/pipeline/lib/lambda-stack.ts:13:18)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:11:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/Lambda/CurrentVersion/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaCurrentVersionDF706F6A0af20156cee11ad2087aca984e75239d",
+            "trace": [
+              "new Version (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-lambda/lib/lambda-version.ts:126:21)",
+              "Function.get currentVersion [as currentVersion] (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-lambda/lib/function.ts:144:28)",
+              "new LambdaStack (/Users/donaldsimpson/workspaces/pipeline/lib/lambda-stack.ts:22:21)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:11:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/LambdaAlias/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaAlias9C15A666",
+            "trace": [
+              "new Alias (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-lambda/lib/alias.ts:92:19)",
+              "new LambdaStack (/Users/donaldsimpson/workspaces/pipeline/lib/lambda-stack.ts:20:19)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:11:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/DeploymentGroup/Application/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeploymentGroupApplication7B89ABEB",
+            "trace": [
+              "new LambdaApplication (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codedeploy/lib/lambda/application.ts:41:22)",
+              "new LambdaDeploymentGroup (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codedeploy/lib/lambda/deployment-group.ts:85:45)",
+              "new LambdaStack (/Users/donaldsimpson/workspaces/pipeline/lib/lambda-stack.ts:25:5)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:11:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/DeploymentGroup/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeploymentGroupServiceRoleA00955F3",
+            "trace": [
+              "new Role (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "new LambdaDeploymentGroup (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codedeploy/lib/lambda/deployment-group.ts:88:31)",
+              "new LambdaStack (/Users/donaldsimpson/workspaces/pipeline/lib/lambda-stack.ts:25:5)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:11:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/DeploymentGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeploymentGroup6D277AF0",
+            "trace": [
+              "new LambdaDeploymentGroup (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codedeploy/lib/lambda/deployment-group.ts:95:22)",
+              "new LambdaStack (/Users/donaldsimpson/workspaces/pipeline/lib/lambda-stack.ts:25:5)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:11:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:51:24)",
+              "/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:17:5)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:60:27)",
+              "/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:17:5)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ]
+      }
+    },
+    "PipelineDeployingLambdaStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "PipelineDeployingLambdaStack.template.json"
+      },
+      "metadata": {
+        "/PipelineDeployingLambdaStack/ImportedRepo/PipelineDeployingLambdaStackPipelineB6214A2B-main-EventRule/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ImportedRepoPipelineDeployingLambdaStackPipelineB6214A2BmainEventRule29F058AB",
+            "trace": [
+              "new Rule (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-events/lib/rule.ts:70:22)",
+              "Import.onEvent (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:96:18)",
+              "Import.onStateChange (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:107:23)",
+              "Import.onReferenceUpdated (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:123:23)",
+              "Import.onCommit (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:158:23)",
+              "CodeCommitSourceAction.bound (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.ts:121:29)",
+              "CodeCommitSourceAction.bind (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/action.ts:234:17)",
+              "RichAction.bind (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:30:24)",
+              "Pipeline._attachActionToPipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:362:37)",
+              "Stage.attachActionToPipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:303:19)",
+              "new Pipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:292:12)",
+              "new PipelineStack (/Users/donaldsimpson/workspaces/pipeline/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/CdkBuild/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkBuildRoleBE66F777",
+            "trace": [
+              "new Role (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "new Project (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:629:31)",
+              "new PipelineProject (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.ts:12:5)",
+              "new PipelineStack (/Users/donaldsimpson/workspaces/pipeline/lib/pipeline-stack.ts:20:22)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/CdkBuild/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkBuildRoleDefaultPolicyD27F0F5C",
+            "trace": [
+              "new Policy (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:236:28)",
+              "PipelineProject.addToRolePolicy (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:158:17)",
+              "new Project (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:728:10)",
+              "new PipelineProject (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.ts:12:5)",
+              "new PipelineStack (/Users/donaldsimpson/workspaces/pipeline/lib/pipeline-stack.ts:20:22)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/CdkBuild/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkBuild455F642E",
+            "trace": [
+              "new Project (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:682:22)",
+              "new PipelineProject (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.ts:12:5)",
+              "new PipelineStack (/Users/donaldsimpson/workspaces/pipeline/lib/pipeline-stack.ts:20:22)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/LambdaBuild/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaBuildRole40E116C6",
+            "trace": [
+              "new Role (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "new Project (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:629:31)",
+              "new PipelineProject (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.ts:12:5)",
+              "new PipelineStack (/Users/donaldsimpson/workspaces/pipeline/lib/pipeline-stack.ts:45:25)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/LambdaBuild/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaBuildRoleDefaultPolicyBE23D2E1",
+            "trace": [
+              "new Policy (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:236:28)",
+              "PipelineProject.addToRolePolicy (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:158:17)",
+              "new Project (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:728:10)",
+              "new PipelineProject (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.ts:12:5)",
+              "new PipelineStack (/Users/donaldsimpson/workspaces/pipeline/lib/pipeline-stack.ts:45:25)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/LambdaBuild/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaBuildCF1FE7ED",
+            "trace": [
+              "new Project (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:682:22)",
+              "new PipelineProject (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.ts:12:5)",
+              "new PipelineStack (/Users/donaldsimpson/workspaces/pipeline/lib/pipeline-stack.ts:45:25)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/ArtifactsBucketEncryptionKey/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineArtifactsBucketEncryptionKey01D58D69",
+            "trace": [
+              "new Key (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-kms/lib/key.ts:401:22)",
+              "new Pipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:233:25)",
+              "new PipelineStack (/Users/donaldsimpson/workspaces/pipeline/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/ArtifactsBucketEncryptionKeyAlias/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineArtifactsBucketEncryptionKeyAlias5C510EEE",
+            "trace": [
+              "new Alias (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-kms/lib/alias.ts:143:22)",
+              "new Pipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:239:9)",
+              "new PipelineStack (/Users/donaldsimpson/workspaces/pipeline/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/ArtifactsBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineArtifactsBucket22248F97",
+            "trace": [
+              "new Bucket (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:713:22)",
+              "new Pipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:246:21)",
+              "new PipelineStack (/Users/donaldsimpson/workspaces/pipeline/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineRoleD68726F7",
+            "trace": [
+              "new Role (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "new Pipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:257:31)",
+              "new PipelineStack (/Users/donaldsimpson/workspaces/pipeline/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineRoleDefaultPolicyC7A05455",
+            "trace": [
+              "new Policy (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:236:28)",
+              "Function.addToPrincipal (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/grant.ts:92:61)",
+              "Function.addToPrincipalOrResource (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/grant.ts:48:26)",
+              "Bucket.grant (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:383:27)",
+              "Bucket.grantReadWrite (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:313:17)",
+              "new Pipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:273:25)",
+              "new PipelineStack (/Users/donaldsimpson/workspaces/pipeline/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineC660917D",
+            "trace": [
+              "new Pipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:261:26)",
+              "new PipelineStack (/Users/donaldsimpson/workspaces/pipeline/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/Source/CodeCommit_Source/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineSourceCodeCommitSourceCodePipelineActionRole89AB8DD5",
+            "trace": [
+              "new Role (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "Pipeline.getRoleForAction (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:522:20)",
+              "Pipeline._attachActionToPipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:356:29)",
+              "Stage.attachActionToPipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:303:19)",
+              "new Pipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:292:12)",
+              "new PipelineStack (/Users/donaldsimpson/workspaces/pipeline/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/Source/CodeCommit_Source/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineSourceCodeCommitSourceCodePipelineActionRoleDefaultPolicyD20EE23A",
+            "trace": [
+              "new Policy (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:236:28)",
+              "Function.addToPrincipal (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/grant.ts:92:61)",
+              "Function.addToPrincipalOrResource (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/grant.ts:48:26)",
+              "Bucket.grant (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:383:27)",
+              "Bucket.grantReadWrite (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:313:17)",
+              "CodeCommitSourceAction.bound (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.ts:131:20)",
+              "CodeCommitSourceAction.bind (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/action.ts:234:17)",
+              "RichAction.bind (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:30:24)",
+              "Pipeline._attachActionToPipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:362:37)",
+              "Stage.attachActionToPipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:303:19)",
+              "new Pipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:292:12)",
+              "new PipelineStack (/Users/donaldsimpson/workspaces/pipeline/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/EventsRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineEventsRole46BEEA7C",
+            "trace": [
+              "new Role (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "Object.singletonEventRole (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-events-targets/lib/util.ts:53:16)",
+              "CodePipeline.bind (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-events-targets/lib/codepipeline.ts:24:39)",
+              "Rule.addTarget (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-events/lib/rule.ts:101:32)",
+              "Import.onEvent (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:101:10)",
+              "Import.onStateChange (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:107:23)",
+              "Import.onReferenceUpdated (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:123:23)",
+              "Import.onCommit (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:158:23)",
+              "CodeCommitSourceAction.bound (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.ts:121:29)",
+              "CodeCommitSourceAction.bind (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/action.ts:234:17)",
+              "RichAction.bind (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:30:24)",
+              "Pipeline._attachActionToPipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:362:37)",
+              "Stage.attachActionToPipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:303:19)",
+              "new Pipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:292:12)",
+              "new PipelineStack (/Users/donaldsimpson/workspaces/pipeline/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/EventsRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineEventsRoleDefaultPolicyFF4FCCE0",
+            "trace": [
+              "new Policy (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:236:28)",
+              "Role.addToPolicy (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:244:17)",
+              "Array.forEach (<anonymous>)",
+              "Object.singletonEventRole (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-events-targets/lib/util.ts:57:20)",
+              "CodePipeline.bind (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-events-targets/lib/codepipeline.ts:24:39)",
+              "Rule.addTarget (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-events/lib/rule.ts:101:32)",
+              "Import.onEvent (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:101:10)",
+              "Import.onStateChange (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:107:23)",
+              "Import.onReferenceUpdated (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:123:23)",
+              "Import.onCommit (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:158:23)",
+              "CodeCommitSourceAction.bound (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.ts:121:29)",
+              "CodeCommitSourceAction.bind (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/action.ts:234:17)",
+              "RichAction.bind (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:30:24)",
+              "Pipeline._attachActionToPipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:362:37)",
+              "Stage.attachActionToPipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:303:19)",
+              "new Pipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:292:12)",
+              "new PipelineStack (/Users/donaldsimpson/workspaces/pipeline/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/Build/Lambda_Build/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineBuildLambdaBuildCodePipelineActionRole2DAE39E9",
+            "trace": [
+              "new Role (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "Pipeline.getRoleForAction (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:522:20)",
+              "Pipeline._attachActionToPipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:356:29)",
+              "Stage.attachActionToPipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:303:19)",
+              "new Pipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:292:12)",
+              "new PipelineStack (/Users/donaldsimpson/workspaces/pipeline/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/Build/Lambda_Build/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineBuildLambdaBuildCodePipelineActionRoleDefaultPolicy3CA005F2",
+            "trace": [
+              "new Policy (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:236:28)",
+              "Role.addToPolicy (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:244:17)",
+              "CodeBuildAction.bound (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codebuild/build-action.ts:87:18)",
+              "CodeBuildAction.bind (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/action.ts:234:17)",
+              "RichAction.bind (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:30:24)",
+              "Pipeline._attachActionToPipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:362:37)",
+              "Stage.attachActionToPipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:303:19)",
+              "new Pipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:292:12)",
+              "new PipelineStack (/Users/donaldsimpson/workspaces/pipeline/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/Build/CDK_Build/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineBuildCDKBuildCodePipelineActionRole15F4B424",
+            "trace": [
+              "new Role (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "Pipeline.getRoleForAction (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:522:20)",
+              "Pipeline._attachActionToPipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:356:29)",
+              "Stage.attachActionToPipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:303:19)",
+              "new Pipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:292:12)",
+              "new PipelineStack (/Users/donaldsimpson/workspaces/pipeline/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/Build/CDK_Build/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineBuildCDKBuildCodePipelineActionRoleDefaultPolicyE350F3F9",
+            "trace": [
+              "new Policy (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:236:28)",
+              "Role.addToPolicy (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:244:17)",
+              "CodeBuildAction.bound (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codebuild/build-action.ts:87:18)",
+              "CodeBuildAction.bind (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/action.ts:234:17)",
+              "RichAction.bind (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:30:24)",
+              "Pipeline._attachActionToPipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:362:37)",
+              "Stage.attachActionToPipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:303:19)",
+              "new Pipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:292:12)",
+              "new PipelineStack (/Users/donaldsimpson/workspaces/pipeline/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/Deploy/Lambda_CFN_Deploy/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineDeployLambdaCFNDeployCodePipelineActionRoleF8A74488",
+            "trace": [
+              "new Role (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "Pipeline.getRoleForAction (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:522:20)",
+              "Pipeline._attachActionToPipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:356:29)",
+              "Stage.attachActionToPipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:303:19)",
+              "new Pipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:292:12)",
+              "new PipelineStack (/Users/donaldsimpson/workspaces/pipeline/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/Deploy/Lambda_CFN_Deploy/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineDeployLambdaCFNDeployCodePipelineActionRoleDefaultPolicy54A1AB67",
+            "trace": [
+              "new Policy (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:236:28)",
+              "Role.addToPolicy (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:244:17)",
+              "SingletonPolicy.statementFor (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:433:17)",
+              "SingletonPolicy.grantPassRole (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:423:10)",
+              "CloudFormationCreateUpdateStackAction.bound (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:192:43)",
+              "CloudFormationCreateUpdateStackAction.bound (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:297:32)",
+              "CloudFormationCreateUpdateStackAction.bind (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/action.ts:234:17)",
+              "RichAction.bind (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:30:24)",
+              "Pipeline._attachActionToPipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:362:37)",
+              "Stage.attachActionToPipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:303:19)",
+              "new Pipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:292:12)",
+              "new PipelineStack (/Users/donaldsimpson/workspaces/pipeline/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/Deploy/Lambda_CFN_Deploy/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineDeployLambdaCFNDeployRole89CA1043",
+            "trace": [
+              "new Role (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "CloudFormationCreateUpdateStackAction.bound (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:172:32)",
+              "CloudFormationCreateUpdateStackAction.bound (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:297:32)",
+              "CloudFormationCreateUpdateStackAction.bind (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/action.ts:234:17)",
+              "RichAction.bind (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:30:24)",
+              "Pipeline._attachActionToPipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:362:37)",
+              "Stage.attachActionToPipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:303:19)",
+              "new Pipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:292:12)",
+              "new PipelineStack (/Users/donaldsimpson/workspaces/pipeline/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/Deploy/Lambda_CFN_Deploy/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineDeployLambdaCFNDeployRoleDefaultPolicyE83FD793",
+            "trace": [
+              "new Policy (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:236:28)",
+              "Function.addToPrincipal (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/grant.ts:92:61)",
+              "Function.addToPrincipalOrResource (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-iam/lib/grant.ts:48:26)",
+              "Bucket.grant (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:383:27)",
+              "Bucket.grantRead (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:280:17)",
+              "CloudFormationCreateUpdateStackAction.bound (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:182:22)",
+              "CloudFormationCreateUpdateStackAction.bound (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:297:32)",
+              "CloudFormationCreateUpdateStackAction.bind (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/action.ts:234:17)",
+              "RichAction.bind (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:30:24)",
+              "Pipeline._attachActionToPipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:362:37)",
+              "Stage.attachActionToPipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:303:19)",
+              "new Pipeline (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:292:12)",
+              "new PipelineStack (/Users/donaldsimpson/workspaces/pipeline/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:51:24)",
+              "/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:17:5)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:60:27)",
+              "/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/donaldsimpson/workspaces/pipeline/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/bin/pipeline.ts:17:5)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Module.m._compile (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/donaldsimpson/workspaces/pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1251:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1272:10)",
+              "Module.load (internal/modules/cjs/loader.js:1100:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:962:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

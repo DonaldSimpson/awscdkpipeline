@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.main = void 0;
+// index.ts
+const GREETING = "Hello, AWS!";
+async function main(event, context) {
+    console.log(GREETING);
+    return GREETING;
+}
+exports.main = main;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJpbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSxXQUFXO0FBQ1gsTUFBTSxRQUFRLEdBQUcsYUFBYSxDQUFDO0FBQ3hCLEtBQUssVUFBVSxJQUFJLENBQUMsS0FBVSxFQUFFLE9BQVk7SUFDakQsT0FBTyxDQUFDLEdBQUcsQ0FBQyxRQUFRLENBQUMsQ0FBQztJQUN0QixPQUFPLFFBQVEsQ0FBQztBQUNsQixDQUFDO0FBSEQsb0JBR0MiLCJzb3VyY2VzQ29udGVudCI6WyIvLyBpbmRleC50c1xuY29uc3QgR1JFRVRJTkcgPSBcIkhlbGxvLCBBV1MhXCI7XG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gbWFpbihldmVudDogYW55LCBjb250ZXh0OiBhbnkpIHtcbiAgY29uc29sZS5sb2coR1JFRVRJTkcpO1xuICByZXR1cm4gR1JFRVRJTkc7XG59Il19
